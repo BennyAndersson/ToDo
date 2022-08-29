@@ -4,16 +4,16 @@ html, body{
 }
 
 body{
-    /* border: solid 3px purple; */
+    border: solid 3px purple;
 }
 #container{
     width: 360px;
-    /* border: solid 3px red; */
+    border: solid 3px red;
 }
 
 #inputField{
     /* vertical-align: middle; */
-    /* border: solid 3px green; */
+    border: solid 3px green;
     outline: none;
 }
 
@@ -22,7 +22,7 @@ body{
 
 #toDoList{
     color: red;
-    /* border: solid 3px blue; */
+    border: solid 3px blue;
 }
 
 .listClass{
