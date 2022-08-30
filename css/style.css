@@ -1,19 +1,30 @@
 html, body{
-    width: 50%;
     margin: 5px auto;
 }
 
 body{
-    border: solid 3px purple;
+    border: solid 6px grey;
+    border-radius: 1rem;
+    background-image: url("/img/busy.jpg");
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.777);
+
+
+padding: 5px;
+
 }
+
+
 #container{
-    width: 360px;
-    border: solid 3px red;
+    /* max-width: 360px; */
+    /* border: solid 3px red; */
+    background-color: rgba(255, 255, 255, 0.777);
+
 }
 
 #inputField{
-    /* vertical-align: middle; */
-    border: solid 3px green;
+    /* border: solid 3px green; */
     outline: none;
 }
 
@@ -21,11 +32,24 @@ body{
 }
 
 #toDoList{
-    color: red;
-    border: solid 3px blue;
+    font-size: 1.5rem;
+    /* border: solid 3px blue; */
 }
 
 .listClass{
     margin: 0;
     cursor: pointer;
+}
+
+ol{
+        border: solid 3px blue;
+        overflow-wrap: break-word;
+}
+
+@media screen and (max-width:1000px){
+    html, body{
+        width: auto;
+        margin: 5px auto;
+    }
+    
 }

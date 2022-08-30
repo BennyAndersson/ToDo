@@ -3,6 +3,8 @@ const inputField = document.getElementById("inputField");
 const toDoButton = document.getElementById("toDoButton");
 const toDoList = document.getElementById("toDoList");
 
+const finishButton = document.getElementById('finishButton');
+const redoButton = document.getElementById('redoButton');
 
 let oList = document.createElement('ol');
 
@@ -23,4 +25,17 @@ toDoButton.addEventListener('click', function(){
     list.addEventListener('dblclick', function(){{
         oList.removeChild(list)
     }});
-})
+
+    finishButton.addEventListener('click', function(){
+        toDoList.removeChild(oList);
+        oList.innerHTML=""
+    })
+    
+
+    redoButton.addEventListener('click', function(){
+        list.style.textDecoration = "none";
+    })
+    
+});
+
+
